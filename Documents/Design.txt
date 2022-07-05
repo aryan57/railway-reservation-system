@@ -1,0 +1,196 @@
+/*
+    Name : Aryan Agarwal
+    Roll Number : 19CS30005
+*/
+
+BookingClass Class: is an abstract base class for all the different categories of bookings (2S,CC,etc.)
+    Public :
+        GetLoadFactor() -> virtual function to get the load factor of different Sub-Classes 
+        GetName() -> virtual function to get the name of different Classes 
+        IsSitting() -> virtual function that returns a bool value whether the class is Sitting or not 
+        IsAc() -> virtual function that returns a bool value whether the Class has AC or not 
+        GetNumberOfTiers() -> virtual function that returns a integer denoting the numbers of Tiers for the class 
+        IsLuxury() -> virtual function that returns a bool value whether the class is Luxury or not
+
+Seat Class: Derived From BookingClass -> is an abstract base class for those classes which have sitting seats only 
+Berth Class: Derived From BookingClass -> is an abstract base class for those classes which have sleeping seats 
+
+Teir0 Class: Derives from the Seat Class -> is an abtract base class for those classes which have 0 tier 
+Teir2 Class: Derives from the Berth Class -> is an abtract base class for those classes which have 2 tiers
+Teir3 Class: Derives from the Berth Class -> is an abtract base class for those classes which have 3 tiers
+
+ACChairCar Class: Derived From the Tier0 Class
+    Private:
+        sIsAC-> bool value to store if it has AC -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsLuxury -> bool value to store if it is luxury or not -> static since it is same for all objects of this class 
+        sNumberOfTiers -> integer value to store the number of tiers -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsSitting -> bool value to store if it only has seat -> constant since it won't change in future -> static since it is same for all objects of this class
+        ACChairCar() -> constructor is private to make Singleton Class
+        ~ACChairCar() -> It is a good practice to make destructor private in Singleton Class
+    Public: 
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        Type() -> function to return the same static object of the singleton Class 
+        pure virtual functions from the abstract base Class are implemented as stated above
+        SetIsLuxury() -> function to change the sIsLuxury datamember of the given class
+        SetLoadFactor() -> function to change the sFareLoadFactor datamember of the given class
+        friend function for output streaming
+
+SecondSitting Class: Derived From the Tier0 Class
+    Private:
+        sIsAC-> bool value to store if it has AC -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsLuxury -> bool value to store if it is luxury or not -> static since it is same for all objects of this class 
+        sNumberOfTiers -> integer value to store the number of tiers -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsSitting -> bool value to store if it only has seat -> constant since it won't change in future -> static since it is same for all objects of this class
+        SecondSitting() -> constructor is private to make Singleton Class
+        ~SecondSitting() -> It is a good practice to make destructor private in Singleton Class
+    Public: 
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        Type() -> function to return the same static object of the singleton Class 
+        pure virtual functions from the abstract base Class are implemented as stated above
+        SetIsLuxury() -> function to change the sIsLuxury datamember of the given class
+        SetLoadFactor() -> function to change the sFareLoadFactor datamember of the given class
+        friend function for output streaming
+
+AC2Tier Class: Derived From the Tier2 Class
+    Private:
+        sIsAC-> bool value to store if it has AC -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsLuxury -> bool value to store if it is luxury or not -> static since it is same for all objects of this class 
+        sNumberOfTiers -> integer value to store the number of tiers -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsSitting -> bool value to store if it only has seat -> constant since it won't change in future -> static since it is same for all objects of this class
+        AC2Tier() -> constructor is private to make Singleton Class
+        ~AC2Tier() -> It is a good practice to make destructor private in Singleton Class
+    Public: 
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        Type() -> function to return the same static object of the singleton Class
+        pure virtual functions from the abstract base Class are implemented as stated above
+        SetIsLuxury() -> function to change the sIsLuxury datamember of the given class
+        SetLoadFactor() -> function to change the sFareLoadFactor datamember of the given class
+        friend function for output streaming
+
+ACFirstClass Class: Derived From the Tier2Class
+    Private:
+        sIsAC-> bool value to store if it has AC -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsLuxury -> bool value to store if it is luxury or not -> static since it is same for all objects of this class 
+        sNumberOfTiers -> integer value to store the number of tiers -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsSitting -> bool value to store if it only has seat -> constant since it won't change in future -> static since it is same for all objects of this class
+        ACFirstClass() -> constructor is private to make Singleton Class
+        ~ACFirstClass() -> It is a good practice to make destructor private in Singleton Class
+    Public: 
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        Type() -> function to return the same static object of the singleton Class 
+        pure virtual functions from the abstract base Class are implemented as stated above
+        SetIsLuxury() -> function to change the sIsLuxury datamember of the given class
+        SetLoadFactor() -> function to change the sFareLoadFactor datamember of the given class
+        friend function for output streaming
+
+FirstClass Class: Derived From the Tier2Class
+    Private:
+        sIsAC-> bool value to store if it has AC -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsLuxury -> bool value to store if it is luxury or not -> static since it is same for all objects of this class 
+        sNumberOfTiers -> integer value to store the number of tiers -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsSitting -> bool value to store if it only has seat -> constant since it won't change in future -> static since it is same for all objects of this class
+        FirstClass() -> constructor is private to make Singleton Class
+        ~FirstClass() -> It is a good practice to make destructor private in Singleton Class
+    Public: 
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        Type() -> function to return the same static object of the singleton Class 
+        pure virtual functions from the abstract base Class are implemented as stated above
+        SetIsLuxury() -> function to change the sIsLuxury datamember of the given class
+        SetLoadFactor() -> function to change the sFareLoadFactor datamember of the given class
+        friend function for output streaming
+
+
+
+AC3Tier Class: Derived From the Tier3 Class
+    Private:
+        sIsAC-> bool value to store if it has AC -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsLuxury -> bool value to store if it is luxury or not -> static since it is same for all objects of this class 
+        sNumberOfTiers -> integer value to store the number of tiers -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsSitting -> bool value to store if it only has seat -> constant since it won't change in future -> static since it is same for all objects of this class
+        AC3Tier() -> constructor is private to make Singleton Class
+        ~AC3Tier() -> It is a good practice to make destructor private in Singleton Class
+    Public: 
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        Type() -> function to return the same static object of the singleton Class 
+        pure virtual functions from the abstract base Class are implemented as stated above
+        SetIsLuxury() -> function to change the sIsLuxury datamember of the given class
+        SetLoadFactor() -> function to change the sFareLoadFactor datamember of the given class
+        friend function for output streaming
+
+Sleeper Class: Derived From the Tier3 Class
+    Private:
+        sIsAC-> bool value to store if it has AC -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsLuxury -> bool value to store if it is luxury or not -> static since it is same for all objects of this class 
+        sNumberOfTiers -> integer value to store the number of tiers -> constant since it won't change in future -> static since it is same for all objects of this class
+        sIsSitting -> bool value to store if it only has seat -> constant since it won't change in future -> static since it is same for all objects of this class
+        Sleeper() -> constructor is private to make Singleton Class
+        ~Sleeper() -> It is a good practice to make destructor private in Singleton Class
+    Public: 
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        Type() -> function to return the same static object of the singleton Class 
+        pure virtual functions from the abstract base Class are implemented as stated above
+        SetIsLuxury() -> function to change the sIsLuxury datamember of the given class
+        SetLoadFactor() -> function to change the sFareLoadFactor datamember of the given class
+        friend function for output streaming
+
+Station Class:
+    Private:
+        name_ -> string type datamember to store the name of the station 
+    Public: 
+        Station() -> Constructor of the Station class
+        ~Station() -> Destructor of the Station class 
+        GetName() -> Function to Return the name of the Station
+        GetDistance(.) -> Function to Return the distance of a given station from this station
+        operator<< -> friend function to overload the operator << for printing the station object
+
+Date Class: 
+    Private: 
+        UNIT -> typedef for unsigned int to store date_ , month_ and year_
+        month_ -> UNIT to store the number of the month
+        date_ -> UNIT to store the number of the date
+        year_ -> UNIT to store the number of the year
+    Public:
+        Date() -> Constructor of the Date Class
+        ~Date() -> Destructor of the Date Class
+        Date(const Date&) -> copy constructor
+        operator= -> operator overloading for copy Assignmenmt
+        IsValidDate() -> return boolean whether a date is valid or not 
+        Day() -> returns the day of the Date object as a string
+        ToString() -> returns the complete date of the Date object as a string
+        operator<< -> friend function to overload the operator << for printing the Date object
+
+Booking Class:
+    Private:
+        fromStation_ -> const Station type datamember. It is constant because during booking the start station should not be changed
+        toStation_ -> const Station type datamember. It is constant because during booking the end station should not be changed
+        date_ -> constant Date type datamember. It is constant because during booking the date should not be changed
+        bookingClass_ -> constant BookingClass type datamember. It is constant because during booking the BookingClass type object should not be changed
+        passenger_ -> Passenger datamember to store the passenger. (for future extension of the program). It is currently NULL.
+        sBaseFarePerKM -> static double datamember to store the base fare per kilometer 
+        sACSurcharge -> static double datamember to store the AC surcharge
+        sLuxuryTaxPercent -> static double datamember to store the luxury tax percent that will be added to the fare if class is luxury     
+        sBookingPNRSerial -> static int datamember to store the PNR number that will be assigned to the booking that is to be made 
+
+        bookingStatus_ -> bool datamember to check whether the booking is successful or not
+        bookingMessage_ -> string datamember containing the message returned from the booking.
+        fare_ -> fare calculated of this booking
+        pnr_ -> PNR alloted to this booking
+        ComputeFare() -> constant function to calculate the fare for a particular booking. Made virtual for future extension of the program 
+    public:
+        Booking() -> constructor of the Booking Class
+        ~Booking() -> destructor of the Booking Class
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        sbookings -> static vector of Booking pointer datatype , it will store all the bookings 
+        operator<< -> friend function to overload the operator << for printing the Date object
+
+Railways Class: 
+    Private:
+        Railways() -> Private Constructor to the class to make is singleton
+        ~Railways() -> It is a good practice to make destructor private in Singleton Class
+        sStations -> map of stations that are in the Indian Railways, having key as the station name and value as the pointer to that Station object
+        sDistStations -> map for stations that are in the Indian Railways, having key as the pair of pointers to stations and value as the distance between them.
+    Public:
+        copy constructor and copy assignment operator are blocked as it a singleton class
+        IndianRailways() -> returns the a constant static object of Railways Class 
+        GetDistance() -> returns distance between two stations
+        *GetStation() -> returns the pointer to the Station

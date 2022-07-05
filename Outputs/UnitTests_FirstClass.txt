@@ -1,0 +1,8 @@
+[Name] of [BookingClass : FirstClass] is CORRECT.
+[IsAC] of [BookingClass : FirstClass] is CORRECT.
+[IsSitting] of [BookingClass : FirstClass] is CORRECT.
+[NumberOfTiers] of [BookingClass : FirstClass] is CORRECT.
+[SetLoadFactor] of [BookingClass : FirstClass] is CORRECT.
+[SetIsLuxury] of [BookingClass : FirstClass] is CORRECT.
+[LoadFactor] of [BookingClass : FirstClass] is set to its original value of 2
+[IsLuxury] of [BookingClass : FirstClass] is set to its original value of 1

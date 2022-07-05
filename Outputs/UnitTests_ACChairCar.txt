@@ -1,0 +1,8 @@
+[Name] of [BookingClass : ACChairCar] is CORRECT.
+[IsAC] of [BookingClass : ACChairCar] is CORRECT.
+[IsSitting] of [BookingClass : ACChairCar] is CORRECT.
+[NumberOfTiers] of [BookingClass : ACChairCar] is CORRECT.
+[SetLoadFactor] of [BookingClass : ACChairCar] is CORRECT.
+[SetIsLuxury] of [BookingClass : ACChairCar] is CORRECT.
+[LoadFactor] of [BookingClass : ACChairCar] is set to its original value of 1.25
+[IsLuxury] of [BookingClass : ACChairCar] is set to its original value of 0

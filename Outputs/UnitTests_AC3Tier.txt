@@ -1,0 +1,8 @@
+[Name] of [BookingClass : AC3Tier] is CORRECT.
+[IsAC] of [BookingClass : AC3Tier] is CORRECT.
+[IsSitting] of [BookingClass : AC3Tier] is CORRECT.
+[NumberOfTiers] of [BookingClass : AC3Tier] is CORRECT.
+[SetLoadFactor] of [BookingClass : AC3Tier] is CORRECT.
+[SetIsLuxury] of [BookingClass : AC3Tier] is CORRECT.
+[LoadFactor] of [BookingClass : AC3Tier] is set to its original value of 1.75
+[IsLuxury] of [BookingClass : AC3Tier] is set to its original value of 0

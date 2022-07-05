@@ -1,0 +1,4 @@
+Method GetName() of class "Station" is CORRECT
+Method GetDistance() of class "Station" is CORRECT
+Copy Assignment Operator of class "Station" is CORRECT
+Copy Constructor of class "Station" is CORRECT

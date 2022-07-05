@@ -1,0 +1,8 @@
+[Name] of [BookingClass : Sleeper] is CORRECT.
+[IsAC] of [BookingClass : Sleeper] is CORRECT.
+[IsSitting] of [BookingClass : Sleeper] is CORRECT.
+[NumberOfTiers] of [BookingClass : Sleeper] is CORRECT.
+[SetLoadFactor] of [BookingClass : Sleeper] is CORRECT.
+[SetIsLuxury] of [BookingClass : Sleeper] is CORRECT.
+[LoadFactor] of [BookingClass : Sleeper] is set to its original value of 1
+[IsLuxury] of [BookingClass : Sleeper] is set to its original value of 0

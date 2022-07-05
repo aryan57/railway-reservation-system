@@ -1,0 +1,12 @@
+BOOKING SUCCEEDED
+PNR Number = 1
+From Station = Mumbai
+To Station = Delhi
+Travel Date = 15/Feb/2021
+Travel Class = AC First Class
+   :   Mode = Sleeping
+   :   Comfort = AC
+   :   Bunks = 2
+   :   Luxury = Yes
+Fare = 2776
+

@@ -1,0 +1,4 @@
+Method GetDistance() of class "Railways" is CORRECT
+BadDistance throw of Method GetDistance() of class "Railways" is CORRECT
+Method GetStation() of class "Railways" is CORRECT
+BadNode throw of Method GetStation() of class "Railways" is CORRECT

@@ -1,0 +1,70 @@
+/*
+    Name : Aryan Agarwal
+    Roll Number : 19CS30005
+*/
+Scenarios for Test Appication : 
+1) When Arrival and Departure Stations are same , tickets cant be bought. returning fair as -1
+2) Fare should be same on the same date when Arrival and Departure Station are just Swapped 
+3) Fare should be same on the different date when Arrival and Departure Station are just Swapped 
+4) Booking from same class type should be allowed on same date from same station 
+5) only the class type are same every other thing is different so the fair should not be same 
+6) Identical Booking on the same date should be allowed 
+7) Different Booking on the same date should be allowed
+
+
+SecondSitting : 
+    I did a checking for the getters GetName(), IsAC(), IsSitting(), GetNumberOfTiers() and all of them were working correct
+    I called the SetLoadFactor() and SetIsLuxury() of the class and checked both of them by again calling the corresponding get function and both of them were working correct.
+    I setted the sIsLuxury and sLoadFactor to there original values so that there will be no error in fare calculation.
+ACChairCar : 
+    I did a checking for the getters GetName(), IsAC(), IsSitting(), GetNumberOfTiers() and all of them were working correct
+    I called the SetLoadFactor() and SetIsLuxury() of the class and checked both of them by again calling the corresponding get function and both of them were working correct.
+    I setted the sIsLuxury and sLoadFactor to there original values so that there will be no error in fare calculation.
+ACFirstClass : 
+    I did a checking for the getters GetName(), IsAC(), IsSitting(), GetNumberOfTiers() and all of them were working correct
+    I called the SetLoadFactor() and SetIsLuxury() of the class and checked both of them by again calling the corresponding get function and both of them were working correct.
+    I setted the sIsLuxury and sLoadFactor to there original values so that there will be no error in fare calculation.
+AC2Tier : 
+    I did a checking for the getters GetName(), IsAC(), IsSitting(), GetNumberOfTiers() and all of them were working correct
+    I called the SetLoadFactor() and SetIsLuxury() of the class and checked both of them by again calling the corresponding get function and both of them were working correct.
+    I setted the sIsLuxury and sLoadFactor to there original values so that there will be no error in fare calculation.
+FirstClass : 
+    I did a checking for the getters GetName(), IsAC(), IsSitting(), GetNumberOfTiers() and all of them were working correct
+    I called the SetLoadFactor() and SetIsLuxury() of the class and checked both of them by again calling the corresponding get function and both of them were working correct.
+    I setted the sIsLuxury and sLoadFactor to there original values so that there will be no error in fare calculation.
+AC3Tier : 
+    I did a checking for the getters GetName(), IsAC(), IsSitting(), GetNumberOfTiers() and all of them were working correct
+    I called the SetLoadFactor() and SetIsLuxury() of the class and checked both of them by again calling the corresponding get function and both of them were working correct.
+    I setted the sIsLuxury and sLoadFactor to there original values so that there will be no error in fare calculation.
+Sleeper : 
+    I did a checking for the getters GetName(), IsAC(), IsSitting(), GetNumberOfTiers() and all of them were working correct
+    I called the SetLoadFactor() and SetIsLuxury() of the class and checked both of them by again calling the corresponding get function and both of them were working correct.
+    I setted the sIsLuxury and sLoadFactor to there original values so that there will be no error in fare calculation.
+
+ Date : 
+    copy assignment operator should work properly
+    copy constructor operator should work properly
+    I created a date object d1(05,07,2001) with normal constructor and it was getting created
+    I created a date object d2 with copy assignment operator and it was getting created
+    I created a date object d3 with copy constructor operator and it was getting created
+    I double checked d2 and d3 by comparing their ToString() values
+    I created another object d4 as (29,02,2020) which comes once in 4 years.
+    I checked its Day() and it was correct
+    I checked its ToString() and it was also correct.
+
+Booking : 
+    I made a sample booking and everything was correct.
+
+Railways :
+    The distance between any two station of the indian railways should be properly set
+    On calling the fucntion for distance between any two station of the railways it should return correctly
+    If data is not found distance return is -1
+    I checked the GetName() of station "Ranchi" and it was giving bad node as expected.
+    I also checked the GetDistance() of station "Mumbai" with "Ranchi" and it was giving -1 as expected.
+
+Station :
+    I created a station s1(Mumbai)
+    I checked the copy constructor and copy assignment operator, by making s2 and s3
+    I checked the GetName() of the station s1
+    I checked the GetDistance() of the station s1
+    I checked the GetName() with objects created with copy constructor ans copy assignment operator 

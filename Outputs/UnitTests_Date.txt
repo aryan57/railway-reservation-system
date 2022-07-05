@@ -1,0 +1,4 @@
+Copy Assignment Operator of class "Date" is CORRECT
+Copy Constructor of class "Date" is CORRECT
+Method Day() of class "Date" is CORRECT
+Method ToString() of class "Date" is CORRECT
